@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Oman</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/oman.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">Discover Oman</a>
+        <ul class="nav-links">
+          <li><a href="tourist-attractions.html">Tourist Attractions</a></li>
+          <li><a href="history-culture.html">History & Culture</a></li>
+          <li><a href="news-events.html">News & Events</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="content-section">
+        <h1>Contact Us</h1>
+        <p>
+          We'd love to hear from you! Please fill out the contact form below to
+          reach the Ministry of Transportation.
+        </p>
+
+        <!-- Contact Form -->
+        <form
+          action="submit_contact_form.php"
+          method="POST"
+          class="contact-form"
+        >
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Ministry's Contact Information -->
+        <section class="contact-info">
+          <h2>Ministry of Transportation</h2>
+          <p>
+            <strong>Address:</strong> Ministry of Transportation, Muscat, Oman
+          </p>
+          <p><strong>Phone:</strong> +968 12345678</p>
+          <p><strong>Email:</strong> contact@ministryoman.om</p>
+        </section>
+
+        <!-- Ministry's Location Map -->
+        <h2>Find Us on the Map</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5797.072495849951!2d58.219346643684654!3d23.58546477105694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1601b508380c207f%3A0x3b482a7b52bb7129!2sMinistry%20of%20Transport%2C%20Communications%20and%20Information%20Technology!5e0!3m2!1sen!2s!4v1698592263432!5m2!1sen!2s"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Discover Oman. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
